@@ -1,6 +1,5 @@
-import { initializeApp, fires } from "firebase/app";
+import { initializeApp } from "firebase/app";
 // import firebase from "firebase";
-import { getAnalytics } from "firebase/analytics";
 
 
 // TODO: Add SDKs for Firebase products that you want to use
@@ -19,4 +18,4 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-const app = initializeApp(firebaseConfig);
+initializeApp(firebaseConfig);

@@ -1,7 +1,7 @@
 import React from 'react'
 import IMG from '../assets/Rectangle3846.png'
 import IMG2 from '../assets/Rectangle 3848.png'
-import { Link, useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 const Delivers = () => {
     const navigate = useNavigate()
@@ -45,9 +45,9 @@ const Delivers = () => {
                     <div className='w-[80%]'>
                         {data.map((item, index) => {
                             return (<>
-                                <div className={`flex ${index % 2 == 1 ? 'flex-row-reverse' : ''} gap-12 w-full mb-[10rem]`}>
+                                <div className={`flex ${index % 2 === 1 ? 'flex-row-reverse' : ''} gap-12 w-full mb-[10rem]`}>
                                     <div className='h-[475px] w-[492px]'>
-                                        <img src={item.img} className='h-[475px] w-[492px]' />
+                                        <img src={item.img} alt={item.heading} className='h-[475px] w-[492px]' />
                                     </div>
                                     <div className='flex flex-col w-[601px]'>
                                         <div className=' text-left text-[44px] font-semibold flex float-left justify-start items-start'>
@@ -65,11 +65,8 @@ const Delivers = () => {
                                             {item.desc}
                                         </div>
                                         <div className='btn mt-14 h-[73px] w-[219px] text-[20px] px-[16px]'>
-                                            <a href=""
-                                            >
-                                                <div className='' onClick={() => { navigate('/ourservices') }}
-                                                >Learn More</div>
-                                            </a>
+                                            <div className='w-full h-full flex items-center justify-center cursor-pointer' onClick={() => { navigate('/ourservices') }}
+                                            >Learn More</div>
                                         </div>
                                     </div>
                                 </div>

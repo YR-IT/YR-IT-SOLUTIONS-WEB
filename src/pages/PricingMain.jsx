@@ -4,10 +4,7 @@ import "../styles/PricingMain.css"
 import OK from "../assets/Vector.png"
 import IMG from '../assets/image11.png'
 import NOK from "../assets/Vector2.png"
-import PI from "../assets/PI12.png"
 import ClientReview from './ClientReview'
-import { Footer } from './Footer'
-import HaveAQues from './HaveAQues'
 import { Link } from 'react-router-dom'
 const PricingMain = () => {
     const datad = [
@@ -42,30 +39,7 @@ const PricingMain = () => {
             ok: 1
         },
     ]
-    const data2 = [
-        {
-            name: "Highly vetted individual or teams",
-            ok: 1
-        }, {
-            name: "$$",
-            ok: 1
-        }, {
-            name: "Scale up and down at your own pace",
-            ok: 1
-        }, {
-            name: "Scale up and down at your own pace",
-            ok: 1
-        }, {
-            name: "Scale up and down at your own pace",
-            ok: 1
-        }, {
-            name: "Scale up and down at your own pace",
-            ok: 1
-        }, {
-            name: "Scale up and down at your own pace",
-            ok: 1
-        },
-    ]
+
     const data3 = [
         {
             name: "Highly vetted individual or teams",
@@ -263,9 +237,9 @@ const PricingMain = () => {
                             <div className='w-[80%]  max-[1100px]:w-[90%]  max-[860px]:w-[97%] max-[780px]:items-center'>
                                 {datad.map((item, index) => {
                                     return (<>
-                                        <div className={`flex ${index % 2 == 1 ? 'flex-row-reverse' : ''} gap-12 w-full mb-[10rem] max-[780px]:flex-col max-[780px]:items-center `}>
+                                        <div className={`flex ${index % 2 === 1 ? 'flex-row-reverse' : ''} gap-12 w-full mb-[10rem] max-[780px]:flex-col max-[780px]:items-center `}>
                                             <div className='h-[408px] w-[490px] max-[600px]:w-[98%] max-[600px]:h-[auto]'>
-                                                <img src={item.img} className='h-[408px] w-[490px] max-[600px]:w-[98%] max-[600px]:h-[auto]' />
+                                                <img src={item.img} alt={item.heading} className='h-[408px] w-[490px] max-[600px]:w-[98%] max-[600px]:h-[auto]' />
                                             </div>
                                             <div className='flex flex-col w-[601px] max-[600px]:w-[98%]'>
                                                 <div className='text-[25px] text-[var(--theme)] max-[630px]:text-[20px]'>

@@ -2,7 +2,6 @@ import React from 'react';
 import "../styles/Footer.css";
 import Logo from "../assets/Logo.png";
 import { Link, useNavigate } from 'react-router-dom'
-import F1 from "../assets/fb1.png"
 import X from "../assets/Xlogo.png"
 export const Footer = ({ state, setState }) => {
     const navigate = useNavigate()

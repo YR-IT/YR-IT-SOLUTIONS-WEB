@@ -6,13 +6,10 @@ import IMG4 from '../assets/flag.png'
 import IMG5 from '../assets/bulb_fill.png'
 import IMG6 from '../assets/people-multiple.png'
 import G1 from "../assets/Group01.png"
-import G2 from "../assets/IconBox.png"
-import G3 from "../assets/IconBox2.png"
 import G4 from "../assets/IconBox3.png"
 import G5 from "../assets/IconBox4.png"
 import "../styles/AboutUs.css"
 import AnimatedNumbers from "react-animated-numbers";
-import ContactUs from './ContactUs'
 import HaveAQues from './HaveAQues'
 import { Link } from 'react-router-dom'
 const AboutUs = () => {

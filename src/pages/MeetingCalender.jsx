@@ -38,13 +38,13 @@ const MeetingCalender = () => {
     }
 
     const handleSubmit = async () => {
-        if (state.firstName === "" || state.lastName == "" || state.phone === "" || state.email == "" || state.company === "") {
+        if (state.firstName === "" || state.lastName === "" || state.phone === "" || state.email === "" || state.company === "") {
             notify(2);
             return;
         }
         try {
             const db = getFirestore();
-            const docRef = await addDoc(collection(db, "Scheduled Meetings"), {
+            await addDoc(collection(db, "Scheduled Meetings"), {
                 info: state,
                 timing: dates[selected],
                 date: date.toDateString(),
@@ -205,7 +205,7 @@ const MeetingCalender = () => {
                     </div>
                 </div>
             </div>
-            {duration != "302 minutes" && selected != -1 && <div className={``}>
+            {duration !== "302 minutes" && selected !== -1 && <div className={``}>
                 <div className="flex items-center justify-center min-h-screen mt-4 form-schedule-main-box">
                     <div className="bg- p-10 rounded-lg shadow-md w-full max-w-4xl border border-blue-900">
                         <h1 className="text-2xl font-bold mb-4 text-left">Your Information</h1>
