@@ -15,16 +15,16 @@ const WhyChooseUs = () => {
                     <table className='w-[80%] max-lg:w-[90%] max-md:hidden'>
                         <tr>
                             <td className=''>
-                                <img src={Icon1} />
+                                <img src={Icon1} alt='SDE Tradition' />
                             </td>
                             <td className=''>
-                                <img src={Icon2} />
+                                <img src={Icon2} alt='Dashboard' />
                             </td>
                             <td className=''>
-                                <img src={Icon3} />
+                                <img src={Icon3} alt='Innovation' />
                             </td>
                             <td className=''>
-                                <img src={Icon4} />
+                                <img src={Icon4} alt='Data Driven' />
                             </td>
                         </tr>
                         <tr>
@@ -133,10 +133,10 @@ const WhyChooseUs = () => {
                     <table className='w-[95%] md:hidden'>
                         <tr>
                             <td className=''>
-                                <img src={Icon1} />
+                                <img src={Icon1} alt='SDE Tradition' />
                             </td>
                             <td className=''>
-                                <img src={Icon2} />
+                                <img src={Icon2} alt='Dashboard' />
                             </td>
                         </tr>
                         <tr>
@@ -200,10 +200,10 @@ const WhyChooseUs = () => {
                     <table className='w-[95%] md:hidden'>
                         <tr>
                             <td className='w-[50%]'>
-                                <img src={Icon3} />
+                                <img src={Icon3} alt='Innovation' />
                             </td>
                             <td className='w-[50%]'>
-                                <img src={Icon4} />
+                                <img src={Icon4} alt='Data Driven' />
                             </td>
                         </tr>
                         <tr>

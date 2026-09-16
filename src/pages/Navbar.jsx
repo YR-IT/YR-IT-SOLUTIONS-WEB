@@ -1,7 +1,6 @@
 import React from 'react'
 import Logo from '../assets/newlogo.png'
 import "../styles/Navbar.css"
-import X from "../assets/Xlogo.png"
 import { Link } from 'react-router-dom'
 const Navbar = ({ state, setState,setshow, show }) => {
     // (window.location.pathname);console.log
@@ -12,7 +11,7 @@ const Navbar = ({ state, setState,setshow, show }) => {
         if (loc === "/ourservices") setState(2);
         if (loc === "/pricing") setState(3);
         if (loc === "/contactus") setState(4);
-    }, [loc])
+    }, [loc, setState])
     return (
         <>
             <div className={`${show ? "" : "hidden"} z-[99999999] absolute h-full w-[100vw] navbar-back`} onClick={()=>{setshow(false)}}>
@@ -20,7 +19,7 @@ const Navbar = ({ state, setState,setshow, show }) => {
             </div>
             <div className='z-[999999999] w-full h-[74px] flex justify-evenly max-[640px]:relative items-center '>
                 <div className='flex gap-[160px] max-[640px]:gap-0 max-[640px]:ml-2'>
-                    <img src={Logo} className='h-[70px] cursor-pointer' />
+                    <img src={Logo} alt='Logo' className='h-[70px] cursor-pointer' />
                 </div>
                 <div className='w-[69%] ml-[9%]  min-[640px]:hidden cursor-pointer relative'>
                     <div className='float-right' onClick={

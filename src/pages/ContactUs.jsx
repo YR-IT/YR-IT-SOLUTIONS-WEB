@@ -37,12 +37,12 @@ const ContactUs = () => {
     const handlesubmit = async () => {
         try {
             // console.log(messages)
-            if (state.firstName === "" || state.lastName === "" || state.email === "" || state.phoneNumber === "" || state.subject === "" || state.cname === "", state.clocation === "" || state.services === "") {
+            if (state.firstName === "" || state.lastName === "" || state.email === "" || state.phoneNumber === "" || state.subject === "" || state.cname === "" || state.clocation === "" || state.services === "") {
                 notify(2);
                 return;
             }
             const db = getFirestore();
-            const docRef = await addDoc(collection(db, "ContactUsMessages"), {
+            await addDoc(collection(db, "ContactUsMessages"), {
                 todo: state,
             });
             sendMessage();

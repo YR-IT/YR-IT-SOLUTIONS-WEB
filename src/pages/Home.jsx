@@ -1,10 +1,8 @@
 import React from 'react'
-import Navbar from './Navbar'
 import '../styles/home.css'
 import IMGC from "../assets/web-development-services.gif"
 
 import WhyChooseUs from './WhyChooseUs';
-import Delivers from './Delivers';
 import ClientReview from './ClientReview';
 import Pricing from './Pricing';
 import ContactUs from './ContactUs';
@@ -27,7 +25,7 @@ const Home = () => {
           </div>
           <div className='h-[420px] ml-[4.5rem] max-[640px]:ml-0 m-[8px] flex gap-[5rem] pt-[3rem] sm:pl-[1rem] pl-[5rem] max-[640px]:pl-[0.5rem] max-[640px]:flex-col'>
             <div className='w-[550px] max-[640px]:w-[95%] max-[640px]:h-[auto] sm:hidden'>
-              <img src={IMGC} alt='image' className='w-[550px] h-[420px] max-[640px]:w-[95%] max-[640px]:h-[auto] mr-0 pr-0 float-right' />
+              <img src={IMGC} alt='Web Development Services' className='w-[550px] h-[420px] max-[640px]:w-[95%] max-[640px]:h-[auto] mr-0 pr-0 float-right' />
             </div>
             <div className='w-[734px] max-[640px]:w-[100%]'>
               <div className='text-[64px] font-bold home-sub-head max-[640px]:text-center'>
@@ -43,7 +41,7 @@ const Home = () => {
               </div>
             </div>
             <div className='w-[550px] max-[640px]:hidden'>
-              <img src={IMGC} alt='image' className='w-[550px] h-[420px] mr-0 pr-0 float-right' />
+              <img src={IMGC} alt='Web Development Services' className='w-[550px] h-[420px] mr-0 pr-0 float-right' />
             </div>
           </div>
         </div>
